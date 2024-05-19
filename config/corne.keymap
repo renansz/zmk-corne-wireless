@@ -23,28 +23,28 @@
 // | CTRL(TAB) |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESHFT(GRV)  |
 //                    | GUI | LWR | BKSP |   | SPC | ENT  | MOD(2) |
-                        bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
-   &mt LCTRL TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT GRAVE
-                  &kp LGUI &mo LOWER &kp BSPC   &kp SPACE &kp RET &mo RAISE
+                bindings = <
+   &kp ESC          &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
+   &mt LCTRL TAB    &kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT        &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT GRAVE
+                          &kp LGUI &mo LOWER &kp BSPC    &kp SPACE &kp RET &mo RAISE
                         >;
                 };
-                raise_layer {
+                lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSLH |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | HOME| PGUP |
 // | SHFT |     |     |     |     |     |   |     |     |     |     | END | PGDN |
 //                    | GUI |     | DEL |   | SPC | MOD(3)| ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSLH
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp HOME &kp PG_UP
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &kp END &kp PG_DN
                                     &kp LGUI     &trans       &kp DEL      &kp SPACE  &mo ALT   &kp RALT
                         >;
                 };
 
-                lower_layer {
+                raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | F1   | F2  | F3  | F4  | F5  | F6  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
